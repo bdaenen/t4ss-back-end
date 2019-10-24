@@ -1,6 +1,6 @@
-#T4SS Backend
+# T4SS Backend
 
-##Setup
+## Setup
 1. Create a file named `.env` containing the following variables and fill them in:
     ```
     DB_USER=
@@ -16,7 +16,7 @@
 
 Now you can access your server from 127.0.0.1:3000.
 
-##endpoints
+## endpoints
 * `/cats`
   * `GET`: get a list of all cats
 * `/cats/<id>`
