@@ -3,6 +3,7 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+let fileUpload = require('express-fileupload');
 
 let session = require('express-session');
 let MySQLStore = require('express-mysql-session')(session);
@@ -11,6 +12,7 @@ let app = express();
 
 // Middleware
 app.use(logger('dev'));
+app.use(fileUpload());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
